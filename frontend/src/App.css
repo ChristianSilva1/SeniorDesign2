@@ -1,0 +1,14 @@
+.container {
+  display: flex;
+  margin-top: 10px;
+  background-color: #323232;
+}
+
+.link {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  background-color: #323232;
+}
