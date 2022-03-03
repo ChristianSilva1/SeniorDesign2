@@ -1,7 +1,5 @@
 .container {
   display: flex;
-  margin-top: 10px;
-  background-color: #323232;
 }
 
 .link {
@@ -10,5 +8,5 @@
 }
 
 body {
-  background-color: #323232;
+  background-color: #202020;
 }
