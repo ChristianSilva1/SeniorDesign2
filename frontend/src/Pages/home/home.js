@@ -7,11 +7,17 @@ import Topbar from "../../components/topbar/Topbar";
 
 export default function Home() {
   return (
-    <div className="home">
-      <FeaturedInfo />
-      <div className="homeWidgets">
-        <WidgetSm />
-        <WidgetLg />
+    <div>
+      <Topbar />
+      <div className="container">
+        <Sidebar />
+        <div className="home">
+          <FeaturedInfo />
+          <div className="homeWidgets">
+            <WidgetSm />
+            <WidgetLg />
+          </div>
+        </div>
       </div>
     </div>
   );

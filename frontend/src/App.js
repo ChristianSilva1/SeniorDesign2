@@ -1,32 +1,27 @@
 import "./App.css";
 import Sidebar from "./components/sidebar/sidebar";
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
-  Switch,
-  useLocation,
-} from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Topbar from "./components/topbar/Topbar";
 import Home from "./Pages/home/home";
 import LiveTrack from "./Pages/LiveTrack/LiveTrack";
 import LandingPage from "./Pages/LandingPage/LandingPage";
 
-function App() {
+const App = () => {
   return (
-    <Router className="Site">
-      <Topbar />
-      <div className="container">
-        <Sidebar />
+    <BrowserRouter className="Site">
+      <main>
         <Routes>
-          <Route exact path="/" element={<Home />} />
+          <Route exact path="/" element={<LandingPage />} />
         </Routes>
         <Routes>
           <Route exact path="/LiveTrack" element={<LiveTrack />} />
         </Routes>
-      </div>
-    </Router>
+        <Routes>
+          <Route exact path="/Home" element={<Home />} />
+        </Routes>
+      </main>
+    </BrowserRouter>
   );
-}
+};
 
 export default App;
