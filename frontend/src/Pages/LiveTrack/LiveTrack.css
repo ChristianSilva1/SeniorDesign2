@@ -3,3 +3,23 @@
   display: flex;
   margin: 20px;
 }
+
+.upload {
+  flex: 5;
+  display: flex;
+  margin: 20px;
+}
+.home1 {
+  flex: 5;
+  color: white;
+  margin: 50px;
+}
+
+.homeWidgets1 {
+  display: flex;
+  margin: 20px;
+}
+
+.Fix {
+  display: flex;
+}
